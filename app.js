@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://umesh:umesh@demotraining.fv2jyua.mongodb.net/?retryWrites=true&w=majority&appName=demotraining')
+mongoose.connect('mongodb+srv://umesh:umesh@demotraining.fv2jyua.mongodb.net/?appName=demotraining')
 .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
